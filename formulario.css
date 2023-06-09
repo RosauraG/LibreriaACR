@@ -69,6 +69,7 @@ form label, form legend{
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
+    box-shadow: 0 0 5px 2px #95e0db;
 }
 
 .input-padron{
@@ -114,6 +115,7 @@ thead{
 td,th{
     border: 1px solid #000000;
     padding: 8px 15px;
+    box-shadow: 0 0 15px 0 #BE858C;
 }
 
 .icono{
@@ -124,6 +126,7 @@ td,th{
 }
 
 .gracias{
-    text-align: center;
-    filter: blur(100);
+    filter: brightness(125%);
+    padding-left: 40%;
+    padding-block: 50px;
 }
