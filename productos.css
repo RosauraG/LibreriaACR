@@ -84,6 +84,7 @@ nav a:hover{
     justify-content: center;
     padding: 2px;
     box-shadow:2px 2px #000000 ;
+    filter: blur(1px);
 }
 
 .productos-descripcion{
