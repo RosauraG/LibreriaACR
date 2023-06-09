@@ -1,0 +1,116 @@
+header{
+    background-color: #BE858C;
+    padding: 20px 0;
+    position:relative;
+    top: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+label{
+    font-family: 'PT Serif', serif;
+}
+
+body{
+    font-family: 'PT Serif', serif;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+    margin-right: 100px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #3D5B59;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #BE858C;
+    text-decoration: underline;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/fondo.png);
+    padding:40px;
+}
+
+.copyright{
+    color:#FFFFFF;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    margin:20px;
+}
+
+form{
+    margin: 50px 0;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin:20px 0;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: #3D5B59;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: #BE858C;
+    transform: scale(1.2);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background:#3D5B59;
+    color:white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
