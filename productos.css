@@ -52,9 +52,38 @@ nav a:hover{
 
 /*estilos del main de productos*/
 
+.productos{
+    padding: 20px;
+}
 
+.productos-caja{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
 
+.productos-container{
+    width: 152px;
+    height: 220px;
+    text-align: center;
+}
 
+.productos-libros {
+    width: 64px;
+    height: 100px;
+    flex-direction: column;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos-descripcion{
+    text-align: center;
+}
+
+.productos-container .boton-rosa{
+    background-color:#EEBBFA;
+}
 /*estilos del footer*/
 footer{
     text-align: center;
