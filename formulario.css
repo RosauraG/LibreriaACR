@@ -1,5 +1,10 @@
+:root{
+    --rosa: #BE858C;
+    --verde: #3D5B59;
+}
+
 header{
-    background-color: #BE858C;
+    background-color: var(--rosa);
     padding: 20px 0;
     position:relative;
     top: 0;
@@ -34,7 +39,7 @@ nav li{
 
 nav a{
     text-transform: uppercase;
-    color: #3D5B59;
+    color: var(--verde);
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
     font-size: 22px;
@@ -42,13 +47,13 @@ nav a{
 }
 
 nav a:hover{
-    color: #BE858C;
+    color: var(--rosa);
     text-decoration: underline;
 }
 
 footer{
     text-align: center;
-    background-color: #BE858C;
+    background-color: var(--rosa);
     padding:40px;
 }
 
@@ -81,7 +86,7 @@ form label, form legend{
 
 .checkbox{
     margin:20px 0;
-    color:#3D5B59;
+    color:var(--verde);
 }
 
 .enviar{
@@ -90,7 +95,7 @@ form label, form legend{
     font-size: 18px;
     font-weight: bold;
     color:white;
-    background: #3D5B59;
+    background: var(--verde);
     border:none;
     border-radius: 5px;
     transition: 1s all;
@@ -98,7 +103,7 @@ form label, form legend{
 }
 
 .enviar:hover{
-    background: #BE858C;
+    background: var(--rosa);
     transform: scale(1.2);
 }
 
@@ -107,7 +112,7 @@ table{
 }
 
 thead{
-    background:#3D5B59;
+    background:var(--verde);
     color:white;
     font-weight: bold;
 }
@@ -115,7 +120,7 @@ thead{
 td,th{
     border: 1px solid #000000;
     padding: 8px 15px;
-    box-shadow: 0 0 15px 0 #BE858C;
+    box-shadow: 0 0 15px 0 var(--rosa);
 }
 
 .icono{
