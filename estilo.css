@@ -5,8 +5,15 @@ main {
     right: 9%;
 }
 
+:root{
+    --secundario: #BE858C;
+    --primario: #3D5B59;
+    --neutro1: #F5F5DC;
+    --neutro2: #262621;
+}
+
 .nav {
-    background-color: #3D5B59;
+    background-color: var(--primario);
     height: 100px;
     display: flex;
     align-items: center;
@@ -33,12 +40,12 @@ main {
 }
 
 .video:hover {
-    box-shadow: 0 0 15px 0 #BE858C;
+    box-shadow: 0 0 15px 0 var(--secundario);
 }   
 
 
 .footer {
-    background-color: #BE858C;
+    background-color: var(--secundario);
     height: 100px;
     width: 100%;
     display: flex;
@@ -96,7 +103,7 @@ h2, h3 {
 }
 
 .titulo {
-    text-shadow: 2px 2px 4px #BE858C;
+    text-shadow: 2px 2px 4px var(p);
     padding-top: 15px;
     text-align: left;
 }
@@ -109,3 +116,4 @@ h2, h3 {
     text-align: center;
     padding-top: 30px;
 }
+
