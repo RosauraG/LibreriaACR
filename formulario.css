@@ -122,3 +122,8 @@ td,th{
     position: relative;
     filter: none;
 }
+
+.gracias{
+    text-align: center;
+    filter: blur(100);
+}
