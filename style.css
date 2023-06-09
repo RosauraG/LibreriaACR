@@ -1,5 +1,5 @@
 body{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 header {
@@ -55,14 +55,19 @@ nav a:hover{
     padding: 50px;
 }
 
-.libros{
+.productos-libros{
     height: 206px;
     width: 136px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.contenidoPrincipal-cursos-link{
+    display: flex;
+    width: 23%;
+}
 
-.productos li{
-    display: inline-block;
+.productos-libros li{
     text-align: center;
     width: 30%;
     vertical-align: top;
