@@ -48,7 +48,7 @@ nav a:hover{
 
 footer{
     text-align: center;
-    background: url(imagenes/fondo.png);
+    background-color: #BE858C;
     padding:40px;
 }
 
@@ -80,6 +80,7 @@ form label, form legend{
 
 .checkbox{
     margin:20px 0;
+    color:#3D5B59;
 }
 
 .enviar{
@@ -113,4 +114,11 @@ thead{
 td,th{
     border: 1px solid #000000;
     padding: 8px 15px;
+}
+
+.icono{
+    width: 200px;
+    margin-top: 75px;
+    position: relative;
+    filter: none;
 }
