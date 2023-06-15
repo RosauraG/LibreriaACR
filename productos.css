@@ -63,34 +63,34 @@ nav a:hover{
 }
 
 .productos-caja{
+    height: 800px;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
+    flex-direction: column;
 }
 
 .productos-container{
+    align-items: center;
     width: 300px;
     height: 500px;
     text-align: center;
-    flex-direction: column;
 }
 
 .productos-libros {
     width: 64px;
     height: 100px;
-    flex-direction: column;
-    height: 100px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 2px;
-    box-shadow:2px 2px #000000 ;
-    filter: blur(1px);
 }
 
 .productos-descripcion{
     text-align: center;
     padding-bottom: 10px;
 }
+
+
 
 .autor{
     vertical-align: bottom;
