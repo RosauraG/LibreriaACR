@@ -1,8 +1,11 @@
-
 main { 
-    position: absolute;
-    left: 9%;
-    right: 9%;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.dark-theme {
+    background-color: var(--neutro2);
+    color: var(--neutro1);
 }
 
 :root{
@@ -12,7 +15,23 @@ main {
     --neutro2: #262621;
 }
 
-.header {
+h2, h3 {
+    font-family: 'PT Sans', sans-serif;
+}
+
+.titulo {
+    text-shadow: 2px 2px 4px var(--primario);
+    padding-top: 15px;
+    text-align: left;
+}
+
+p {
+    font-family: 'PT Serif', serif;
+    text-align: left;
+    padding: 10px;
+}
+
+header {
     height: 100px;
     width: 100%;
     background-color: var(--primario);
@@ -21,19 +40,33 @@ main {
     justify-content: space-around;
 }
 
+button {
+    background-color: var(--secundario);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+}
+
 .nav__logo, .nav__img {
     height: 100%;
     float: left;
+    filter: hue-rotate(310deg);
+}
+
+nav > ul > li {
+    display: inline-block;
+    padding: 10px;
 }
 
 .nav__link {
     color: #F5F5DC;
     text-decoration: none;
-    padding: 20px;
 }
 
 .nav__links {
-    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
 }
 
 .nav__dark-ligth, .nav__img2 {
@@ -56,29 +89,37 @@ main {
     align-items: center;
 }
 
+.diferenciales__listas {
+    list-style: none;
+    list-style-image: url('imagenes/icons8-libro-16.png');
+    padding: 30px;
+    margin: 0;
+}
+
 .diferenciales__img {
     width: 100%;
 }
 
+#ubicacion {
+    text-align: center;
+}
 
-.container {
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: var(--secundario);
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    position:fixed;
+    bottom: 0;
 }
 
-.text {
-flex: 1;
-margin-left: 20px;
-}
-
-p {
-    font-family: 'PT Serif', serif;
-    text-align: justify;
+.footer__link {
+    color: var(--neutro1);
+    text-decoration: none;
+    display: inline-block;
     padding: 10px;
-}
-
-h2, h3 {
-    font-family: 'PT Sans', sans-serif;
 }
 
 .footer__copyright {
@@ -87,38 +128,7 @@ h2, h3 {
     font-weight: 400;
 }
 
-.titulo {
-    text-shadow: 2px 2px 4px var(p);
-    padding-top: 15px;
-    text-align: left;
-}
-
-.diferenciales__contenidos {
-    padding: 10px;
-}
-
-#ubicacion {
-    text-align: center;
-    padding-top: 30px;
-}
-
-.footer {
-    background-color: var(--secundario);
-    height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    position:fixed;
-    bottom: 0;
-    text-decoration: none;
-}
-
-.footer__logo {
+.footer__logo, .footer__img {
     height: 100%;
-    background-color: transparent;
-}
-
-.footer__img {
-    height: 100%;
+    filter: hue-rotate(30deg);    
 }
