@@ -1,47 +1,35 @@
 /*estilos del header*/
-body{
+body {
     font-family: 'PT Sans', sans-serif;
 }
 
 header {
     background-color: #B7A6F6;
     padding: 20px 0;
-    position: sticky;
-    top:0;
 }
 
+.container-header {
+    height: 800px;
+    width: 100%;
+}
 
-
-.logo{
+.logo {
     width: 150px;
     height: 150px;
 }
 
-.banner{
-    width: 350px;
-    height: 300px;
-}
-
-    
-
-.caja{
-    width: 940px;
-    position: relative;
-    margin: 0 auto;
-}
-
-nav{
+nav {
     position: absolute;
-    top:110px;
+    top: 110px;
     right: 0;
 }
 
-nav li{
+nav li {
     display: inline;
     margin: 0 0 0 15px;
 }
 
-nav a{
+nav a {
     text-transform: uppercase;
     color: #000000;
     font-weight: bold;
@@ -49,77 +37,82 @@ nav a{
     text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
     color: #732634;
     text-decoration: underline;
 }
 
 /*estilos del main de productos*/
 
-
-
-.productos{
-    padding: 20px;
+.productos-caja {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
-.productos-caja{
-    height: 800px;
-    display:flex;
-    justify-content:space-around;
-    align-items: center;
+.productos-container {
+    display: flex;
     flex-direction: column;
-}
-
-.productos-container{
     align-items: center;
-    width: 300px;
-    height: 500px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
     text-align: center;
 }
 
 .productos-libros {
-    width: 64px;
-    height: 100px;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 2px;
-}
-
-.productos-descripcion{
-    text-align: center;
-    padding-bottom: 10px;
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 5px;
 }
 
 
-
-.autor{
-    vertical-align: bottom;
+.producto-descripcion {
+    font-weight: bold;
+    margin-top: 10px;
 }
 
-.productos-container .boton-rosa{
-    -ms-flex-align: baseline;
-    color: #732634;
-    background-color:#EEBBFA;
-    padding-top: auto;
+.autor {
+    color: #888;
 }
 
-.productos-container .boton-rosa:hover{
-    background-color:#A271AD;
+.producto-precio {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-.productos-container .boton-rosa:active{
-    background-color: #A2B388;
+.boton-rosa {
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: stretch;
 }
+
+.boton-rosa:hover {
+    background-color: #ff4880;
+}
+
+
 
 /*estilos del footer*/
-footer{
+footer {
     text-align: center;
     background: url(imagenes/fondo.png);
-    padding:40px;
+    padding: 40px;
 }
 
-.copyright{
-    color:#FFFFFF;
+.copyright {
+    color: #FFFFFF;
     font-size: 15px;
-    margin:20px;
+    margin: 20px;
 }
