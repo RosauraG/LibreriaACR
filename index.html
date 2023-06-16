@@ -22,16 +22,21 @@
 
     <body>
         <header class="header">
-            <nav class="nav">
-                <div class="nav__logo">
-                    <img class="nav__img" src="imagenes/logo.png" alt="logo">
-                </div>
-                <div class="nav__links">
+            <div class="nav__logo">
+                <img class="nav__img" src="imagenes/logo.png" alt="logo">
+            </div>
+            <div class="nav__links">
+                <nav class="nav"> 
                     <a class="nav__link" href="index.html">HOME</a>
                     <a class="nav_link" href="productos.html">PRODUCTOS</a>
                     <a class="nav__link" href="contacto.html">CONTACTO</a>
-                </div>
-            </nav>
+                </nav>
+            </div>
+            <div class="nav__img2" id="nav__dark-ligth">
+                <button>
+                    <img src="imagenes/icons8-luna-creciente-30.png" alt="">
+                </button>
+            </div>
         </header> 
         <main>
             <div class="video">
@@ -51,7 +56,8 @@
                 <article class="diferenciales">
                     <h3 class="titulo">Diferenciales</h3>
                     <div class="diferenciales__contenidos">
-                        <ul class="diferenciales__contenido">
+                        <div>
+                            <ul class="diferenciales__contenido">
                             <li class="items">Atención personalizada a los clientes</li>
                             <li class="items">Espacio diferenciado</li>
                             <li class="items">Localización</li>
@@ -64,7 +70,8 @@
                             <li class="items">Mayoreo</li>
                             <li class="items">Menudeo</li>
                             <li class="items">Dropshipping</li>
-                        </ul><img class="diferenciales__img" src="diferenciales/libreria.png" alt="libreria">
+                        </ul></div>
+                        <div><img class="diferenciales__img" src="diferenciales/libreria.png" alt="libreria"></div>
                     </div>
 
                 </article>
@@ -100,5 +107,6 @@
               &copy; 2023 Librería ACR. Todos los derechos reservados.
             </div>
           </footer>
-    </body>
+          <script src="JS/app.js"></script>
+        </body>
 </html>
