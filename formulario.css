@@ -1,0 +1,153 @@
+:root{
+    --rosa: #BE858C;
+    --verde: #3D5B59;
+}
+
+header{
+    background-color: var(--rosa);
+    padding: 20px 0;
+    position:relative;
+    top: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+label{
+    font-family: 'PT Serif', serif;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    padding: 30px;
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+    margin-right: 100px;
+    
+}
+
+nav a{
+    text-transform: uppercase;
+    color: var(--verde);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+body{
+    font-family: 'PT Serif', serif;
+}
+
+form{
+    margin: 50px 0;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+    box-shadow: 0 0 5px 2px #95e0db;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+#horario{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+#preferenciahorario {
+    padding-top: 40px;
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background:var(--verde);
+    color:white;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+    box-shadow: 0 0 15px 0 var(--rosa);
+}
+
+.checkbox{
+    margin:10px 0;
+    color:var(--verde);
+}
+
+.enviar{
+    width: 30%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: var(--verde);
+    border:none;
+    border-radius: 5px;
+    margin-top: 50px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: var(--rosa);
+    transform: scale(1.1);
+}
+
+.icono{
+    width: 200px;
+    margin-top: 75px;
+    position: relative;
+    filter: none;
+}
+
+.gracias{
+    filter: brightness(125%);
+    padding-left: 40%;
+    padding-block: 50px;
+}
+
+.agradecimientofinal{
+    filter: brightness(125%);
+    padding-left: 40%;
+    padding-block: 50px; 
+}
+
+footer{
+    text-align: center;
+    background-color: var(--rosa);
+    padding:40px;
+}
+
+.copyright{
+    color:#FFFFFF;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    margin:20px;
+}

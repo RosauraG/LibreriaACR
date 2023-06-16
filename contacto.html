@@ -4,89 +4,119 @@
     <head>
         <meta charset="UTF-8">
         <title>Contacto - Librería ACR</title>
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="formulario.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+
     </head>
+
     <body>
         <header>
             <div class="caja">
-                <h1><img class="logo" src="imagenes/logo.png" alt="logo"></h1>
-                <nav>
+                  <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="productos.html">Productos</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
+                <h1><img class="logo" src="imagenes/logo.png" alt="logo"></h1>
             </div>
         </header>
+       
+        <img class="icono">
+        <iconify-icon icon="emojione-monotone:books"></iconify-icon></body>
+        </img>
+
         <main>
             
-            <form>
-                <label for="nombreapellido">Nombre y Apellido</label>
+            <form class="form">
+                <label for="form__nombreapellido">Nombre y apellido</label>
                 <input type="text" id="nombreapellido" class="input-padron" required>
 
-                <label for="correoelectronico">Correo Electrónico</label>
+                <label for="form__correoelectronico">Correo electrónico</label>
                 <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
 
-                <label for="telefono">Teléfono</label>
+                <label for="form__telefono">Teléfono</label>
                 <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
 
-                <label for="mensaje">Mensaje</label>
+                <label for="form__mensaje">Mensaje</label>
                 <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
                 
                 <fieldset>
-                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                    <legend>¿Cómo le gustaría que le contactemos?</legend>
 
-                    <label for="radio-email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
+                    <label for="form__modocontacto--email"><input type="radio" name="contacto" value="email" id="radio-email">Email</label>
                     
-                    <label for="radio-telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
+                    <label for="form__modocontacto--telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
                     
-                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    <label for="form__modocontacto--whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp">WhatsApp</label>
                     
                 </fieldset>
-               
+
+
+                <div id="horario">
+                    <div id="diasyhoras">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Día</th>
+                                    <th>Horario</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lunes, miércoles y viernes</td>
+                                    <td>08:00 - 20:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="preferenciahorario">
+                        <fieldset>
+                            <legend>¿En qué horario prefiere ser atendido?</legend>
+                            <select>
+                                <optgroup label= "Mañana"></optgroup>
+                                <option>08:00-10:00</option>
+                                <option>10:00-12:00</option>
+                                <optgroup label="Tarde"></optgroup>
+                                <option>12:00-15:00</option>
+                                <option>15:00-18:00</option>
+                                <optgroup label="Noche"></optgroup>
+                                <option>18:00-20:00</option> 18:00
+                            </select>
+                        </fieldset>
+                    </div> 
+                </div>
+
                 <fieldset>
-                    <legend>¿En cuál horario prefiere ser atendido?</legend>
-                    <select>
-                        <option>Mañana</option>
-                        <option>Tarde</option>
-                        <option>Noche</option>
-                    </select>
+                <label class="checkbox"><input type="checkbox" checked>Recibir novedades de la Librería ACR</label>                
                 </fieldset>
-                
-                <label class="checkbox"><input type="checkbox" checked>¿Le gustaría recibir novedades de la Librería Barroso?</label>                
-                
-                <input type="submit" value="Enviar formulario" class="enviar">
+
+                <button class="enviar" id="envioconfirmado" type="submit">Enviar</button>
 
             </form>
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>Día</th>
-                        <th>Horario</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Lunes</td>
-                        <td>08h ~ 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Miércoles</td>
-                        <td>08h ~ 20h</td>
-                    </tr>
-                    <tr>
-                        <td>Viernes</td>
-                        <td>08h ~ 20h</td>
-                    </tr>
-                </tbody>
-            </table>
+            <label id="retroalimentacion"></label>
+            <img class="gracias" src="imagenes/pexels-vie-studio-4439457.jpg" alt="Thank You"></img>
+
         </main>
+
         <footer>
             <img class="logo" src="imagenes/logo.png" alt="logo">
             <p class="copyright">&copy Copyright Librería ACR - 2020</p>
         </footer>
+
+        <script src="form.js"></script>
+
     </body>
 </html>
