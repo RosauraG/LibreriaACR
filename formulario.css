@@ -15,10 +15,6 @@ label{
     font-family: 'PT Serif', serif;
 }
 
-body{
-    font-family: 'PT Serif', serif;
-}
-
 .logo{
     width: 150px;
     height: 150px;
@@ -35,6 +31,7 @@ nav li{
     display: inline;
     margin: 0 0 0 15px;
     margin-right: 100px;
+    
 }
 
 nav a{
@@ -47,21 +44,11 @@ nav a{
 }
 
 nav a:hover{
-    color: var(--rosa);
     text-decoration: underline;
 }
 
-footer{
-    text-align: center;
-    background-color: var(--rosa);
-    padding:40px;
-}
-
-.copyright{
-    color:#FFFFFF;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 15px;
-    margin:20px;
+body{
+    font-family: 'PT Serif', serif;
 }
 
 form{
@@ -84,27 +71,13 @@ form label, form legend{
     width: 50%;
 }
 
-.checkbox{
-    margin:20px 0;
-    color:var(--verde);
+#horario{
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
-.enviar{
-    width: 40%;
-    padding: 15px 0;
-    font-size: 18px;
-    font-weight: bold;
-    color:white;
-    background: var(--verde);
-    border:none;
-    border-radius: 5px;
-    transition: 1s all;
-    cursor:pointer;
-}
-
-.enviar:hover{
-    background: var(--rosa);
-    transform: scale(1.2);
+#preferenciahorario {
+    padding-top: 40px;
 }
 
 table{
@@ -123,6 +96,30 @@ td,th{
     box-shadow: 0 0 15px 0 var(--rosa);
 }
 
+.checkbox{
+    margin:10px 0;
+    color:var(--verde);
+}
+
+.enviar{
+    width: 30%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: var(--verde);
+    border:none;
+    border-radius: 5px;
+    margin-top: 50px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: var(--rosa);
+    transform: scale(1.1);
+}
+
 .icono{
     width: 200px;
     margin-top: 75px;
@@ -134,4 +131,23 @@ td,th{
     filter: brightness(125%);
     padding-left: 40%;
     padding-block: 50px;
+}
+
+.agradecimientofinal{
+    filter: brightness(125%);
+    padding-left: 40%;
+    padding-block: 50px; 
+}
+
+footer{
+    text-align: center;
+    background-color: var(--rosa);
+    padding:40px;
+}
+
+.copyright{
+    color:#FFFFFF;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 15px;
+    margin:20px;
 }

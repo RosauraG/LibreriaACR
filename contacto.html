@@ -21,14 +21,14 @@
     <body>
         <header>
             <div class="caja">
-                <h1><img class="logo" src="imagenes/logo.png" alt="logo"></h1>
-                <nav>
+                  <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="productos.html">Productos</a></li>
                         <li><a href="contacto.html">Contacto</a></li>
                     </ul>
                 </nav>
+                <h1><img class="logo" src="imagenes/logo.png" alt="logo"></h1>
             </div>
         </header>
        
@@ -58,41 +58,59 @@
                     
                     <label for="form__modocontacto--telefono"><input type="radio" name="contacto" value="telefono" id="radio-telefono">Teléfono</label>
                     
-                    <label for="form__modocontacto--whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp" checked>WhatsApp</label>
+                    <label for="form__modocontacto--whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp">WhatsApp</label>
                     
                 </fieldset>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Día</th>
-                            <th>Horario</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Lunes, miércoles y viernes</td>
-                            <td>08:00 - 20:00</td>
-                        </tr>
-                    </tbody>
-                </table>
+
+
+                <div id="horario">
+                    <div id="diasyhoras">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Día</th>
+                                    <th>Horario</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lunes, miércoles y viernes</td>
+                                    <td>08:00 - 20:00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="preferenciahorario">
+                        <fieldset>
+                            <legend>¿En qué horario prefiere ser atendido?</legend>
+                            <select>
+                                <optgroup label= "Mañana"></optgroup>
+                                <option>08:00-10:00</option>
+                                <option>10:00-12:00</option>
+                                <optgroup label="Tarde"></optgroup>
+                                <option>12:00-15:00</option>
+                                <option>15:00-18:00</option>
+                                <optgroup label="Noche"></optgroup>
+                                <option>18:00-20:00</option> 18:00
+                            </select>
+                        </fieldset>
+                    </div> 
+                </div>
+
                 <fieldset>
-                    <legend>¿En cuál horario prefiere ser atendido?</legend>
-                    <select>
-                        <option>Mañana</option>
-                        <option>Tarde</option>
-                        <option>Noche</option>
-                    </select>
-                </fieldset>
-                
                 <label class="checkbox"><input type="checkbox" checked>Recibir novedades de la Librería ACR</label>                
-                
-                <input class="enviar" id="hoverboton" type="submit" value="Enviar formulario" >
+                </fieldset>
+
+                <input class="enviar" id="envioconfirmado" type="submit" value="Enviar" >
 
             </form>
 
+            <label id="retroalimentacion"></label>
             <img class="gracias" src="imagenes/pexels-vie-studio-4439457.jpg" alt="Thank You"></img>
 
         </main>
+
         <footer>
             <img class="logo" src="imagenes/logo.png" alt="logo">
             <p class="copyright">&copy Copyright Librería ACR - 2020</p>
